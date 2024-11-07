@@ -11,13 +11,13 @@ public class Notification {
 
 	@Id
 	@Column(name = "autoID")
-	private String autoID;
+	private int autoID;
 
 	@Column(name = "userID")
 	private String userID;
 
 	@Column(name = "q_id")
-	private String q_id;
+	private int q_id;
 
 	@Column(name = "dateAndTime")
 	private Date dateAndTime;
@@ -32,7 +32,7 @@ public class Notification {
 		super();
 	}
 
-	public Notification(String autoID, String userID, String q_id, Date dateAndTime, String content, String status) {
+	public Notification(int autoID, String userID, int q_id, Date dateAndTime, String content, String status) {
 		super();
 		this.autoID = autoID;
 		this.userID = userID;
@@ -42,11 +42,11 @@ public class Notification {
 		this.status = status;
 	}
 
-	public String getAutoID() {
+	public int getAutoID() {
 		return autoID;
 	}
 
-	public void setAutoID(String autoID) {
+	public void setAutoID(int autoID) {
 		this.autoID = autoID;
 	}
 
@@ -58,11 +58,11 @@ public class Notification {
 		this.userID = userID;
 	}
 
-	public String getQ_id() {
+	public int getQ_id() {
 		return q_id;
 	}
 
-	public void setQ_id(String q_id) {
+	public void setQ_id(int q_id) {
 		this.q_id = q_id;
 	}
 

@@ -9,7 +9,7 @@ public class Favorite {
 
 	@Id
 	@Column(name="autoID")
-	private String autoID;
+	private int autoID;
 	
 	@Column(name="userID")
 	private String userID;
@@ -21,18 +21,18 @@ public class Favorite {
 		super();
 	}
 
-	public Favorite(String autoID, String userID, String attractionName) {
+	public Favorite(int autoID, String userID, String attractionName) {
 		super();
 		this.autoID = autoID;
 		this.userID = userID;
 		this.attractionName = attractionName;
 	}
 
-	public String getAutoID() {
+	public int getAutoID() {
 		return autoID;
 	}
 
-	public void setAutoID(String autoID) {
+	public void setAutoID(int autoID) {
 		this.autoID = autoID;
 	}
 

@@ -8,8 +8,8 @@ import javax.persistence.*;
 public class Attraction {
 
 	@Id
-	@Column(name="name")
-	private String name;
+	@Column(name="attractionName")
+	private String attractionName;
 	
 	@Column(name="tag")
 	private String tag;
@@ -21,7 +21,7 @@ public class Attraction {
 	private String desc;
 	
 	@Column(name="rating")
-	private String rating;
+	private double rating;
 	
 	@Column(name="creator")
 	private String Creator;
@@ -33,23 +33,23 @@ public class Attraction {
 		super();
 	}
 
-	public Attraction(String name, String tag, String city, String desc, String rating, String creator, String status) {
+	public Attraction(String attractionName, String tag, String city, String desc, double rating, String creator, String status) {
 		super();
-		this.name = name;
+		this.attractionName = attractionName;
 		this.tag = tag;
 		this.city = city;
 		this.desc = desc;
 		this.rating = rating;
-		Creator = creator;
-		Status = status;
+		this.Creator = creator;
+		this.Status = status;
 	}
 
 	public String getName() {
-		return name;
+		return attractionName;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setName(String attractionName) {
+		this.attractionName = attractionName;
 	}
 
 	public String getTag() {
@@ -76,11 +76,11 @@ public class Attraction {
 		this.desc = desc;
 	}
 
-	public String getRating() {
+	public double getRating() {
 		return rating;
 	}
 
-	public void setRating(String rating) {
+	public void setRating(double rating) {
 		this.rating = rating;
 	}
 

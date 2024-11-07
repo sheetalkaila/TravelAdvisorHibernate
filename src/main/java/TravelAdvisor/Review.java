@@ -11,7 +11,7 @@ public class Review {
 
 	@Id
 	@Column(name = "autoID")
-	private String autoID;
+	private int autoID;
 
 	@Column(name = "attractionName")
 	private String attractionName;
@@ -23,7 +23,7 @@ public class Review {
 	private String content;
 
 	@Column(name = "score")
-	private String score;
+	private double score;
 
 	@Column(name = "dateAndTime")
 	private Date dateAndTime;
@@ -32,7 +32,7 @@ public class Review {
 		super();
 	}
 
-	public Review(String autoID, String attractionName, String userID, String content, String score, Date dateAndTime) {
+	public Review(int autoID, String attractionName, String userID, String content, double score, Date dateAndTime) {
 		super();
 		this.autoID = autoID;
 		this.attractionName = attractionName;
@@ -42,11 +42,11 @@ public class Review {
 		this.dateAndTime = dateAndTime;
 	}
 
-	public String getAutoID() {
+	public int getAutoID() {
 		return autoID;
 	}
 
-	public void setAutoID(String autoID) {
+	public void setAutoID(int autoID) {
 		this.autoID = autoID;
 	}
 
@@ -74,11 +74,11 @@ public class Review {
 		this.content = content;
 	}
 
-	public String getScore() {
+	public double getScore() {
 		return score;
 	}
 
-	public void setScore(String score) {
+	public void setScore(double score) {
 		this.score = score;
 	}
 

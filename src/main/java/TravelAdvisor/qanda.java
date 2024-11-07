@@ -11,7 +11,7 @@ public class qanda {
 
 	@Id
 	@Column(name="autoID")
-	private String autoID;
+	private int autoID;
 	
 	@Column(name="attractionName")
 	private String attractionName;
@@ -29,14 +29,14 @@ public class qanda {
 	private Date dateAndTime;
 	
 	@Column(name="q_id")
-	private String q_id;
+	private int q_id;
 
 	public qanda() {
 		super();
 	}
 
-	public qanda(String autoID, String attractionName, String type, String userID, String content, Date dateAndTime,
-			String q_id) {
+	public qanda(int autoID, String attractionName, String type, String userID, String content, Date dateAndTime,
+			int q_id) {
 		super();
 		this.autoID = autoID;
 		this.attractionName = attractionName;
@@ -47,11 +47,11 @@ public class qanda {
 		this.q_id = q_id;
 	}
 
-	public String getAutoID() {
+	public int getAutoID() {
 		return autoID;
 	}
 
-	public void setAutoID(String autoID) {
+	public void setAutoID(int autoID) {
 		this.autoID = autoID;
 	}
 
@@ -95,11 +95,11 @@ public class qanda {
 		this.dateAndTime = dateAndTime;
 	}
 
-	public String getQ_id() {
+	public int getQ_id() {
 		return q_id;
 	}
 
-	public void setQ_id(String q_id) {
+	public void setQ_id(int q_id) {
 		this.q_id = q_id;
 	}
 	

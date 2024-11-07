@@ -2,8 +2,9 @@ package TravelAdvisor;
 
 import javax.persistence.*;
 
+
 @Entity
-@Table(name="User")
+@Table(name="TAuser")
 
 public class User {
 
