@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public interface ITravelAdvisorData {
 
 	//user
-	//User getUser(String loginid,String psw);
+	User getUser(String loginid,String psw);
 	//boolean isUserExists(String registerid);
 	//void createUser(User u);
 	
